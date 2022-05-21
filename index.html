@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Poppins&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+         <h1>BMI Calculator</h1>
+         <div class="row">
+           <input type="range" min="20" max="200" value="20" id="weight"  oninput="calculator()">
+           <span id="weight-val">20 kg</span>
+         </div>
+         <div class="row">
+           <input type="range" min="20" max="250" value="100" value="100" id="height" oninput="calculator()">
+           <span id="height-val">200 cm</span>
+         </div>
+         <div class="output">
+           <h1 id="result">23</h1>
+           <p id="category">Normal Weight</p>
+         </div>
+      </div>
+    </div>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
